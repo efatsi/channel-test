@@ -4,5 +4,9 @@
   Logged in as: <%= current_user.email %>
 </div>
 <br>
-<input id="message"></input>
-<button id="submit">Send</button>
+
+Check out these rooms:
+<br>
+<%= link_to "Games", message_path("games") %>
+<br>
+<%= link_to "Programming", message_path("programming") %>

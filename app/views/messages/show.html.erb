@@ -1,0 +1,7 @@
+<input id="message"></input>
+<button id="submit">Send</button>
+
+<div id="messages" data-id="<%= params[:id] %>">
+  <h4>Messages:</h4>
+  <%= render Message.where(room_id: params[:id]) %>
+</div>
